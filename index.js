@@ -1,1 +1,0 @@
-console.log("resetting directly from staging area");
