@@ -1,1 +1,1 @@
-console.log("resetting directly from staging area!");
+console.log("resetting directly from staging area");
