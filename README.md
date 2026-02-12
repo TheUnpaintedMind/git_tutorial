@@ -4,7 +4,11 @@ This is a guide to learning Git and GitHub which covers topics beginning from un
 ## What is Git?
 In Google Docs, once we make a certain change and we want to go back to a previous change that we made, Docs offers us a feature in which we can see the version history of our file which saves all the changes that we have made to our file.
 
-In a similar fashion, Git is the code analog of Google Docs which can be used to track changes in code, track who made those changes, collaborate together on open-source projects etc. So Git is a version control system which was created by Linus Torvalds in 2005 and has been maintained by Junio Hamano since then.
+In a similar fashion, Git is the code analog of Google Docs hence it is a Version Control System (VCS) which can be used to track changes in code, track who made those changes, collaborate together on open-source projects etc. So Git was created by Linus Torvalds in 2005 and has been maintained by Junio Hamano since then.
+
+### What is GitHub?
+Git is just a Version Control System which tracks changes which are made locally (on our machine). GitHub just pushes the idea forward and stores all these changes on a cloud by providing a GUI(Graphical User Interface) notably [GitHub.com](https://github.com). Hence one can sync their changes made locally with those made on the GUI thus improving accessibility
+and flexibility.
 
 ### Google Docs Version History:-
 
