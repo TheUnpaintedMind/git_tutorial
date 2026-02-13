@@ -21,5 +21,5 @@ and flexibility.
 ## Contents :-
 
 1. [Git  Installation](git_install.md)
-2. 
+2. [Project Setup](setup.md) 
 
