@@ -107,11 +107,25 @@ cd ~/Desktop/git_folder
    git commit -m "added all files"
    ```
    <br><br>
-   Here -m **flag**(used to modify the behaviour of a command) is used to type a message for our commit. If we don't specify -m flag then a text editor automatically opens up. Click on insert key and began typing your commit, to exit the editor press escape and write the following command :-
 
-   <br><br>
-   ```poweshell
-   :wq
-   ``` 
+   Following will be displayed on the command line :-
 
+   ```
+    2 files changed, 12 insertions(+)
+     create mode 100644 file1.cpp
+     create mode 100644 file2.cpp
+   ```
+
+   Here -m **flag**(used to modify the behaviour of a command) is used to type a message for our commit. If we don't specify -m flag then a text editor automatically opens up. Click on insert key and began typing your commit, to exit the editor press escape and write ":wq" (write and quit) inside the editor.
+
+    <br>
+
+    **Now one has to follow some rules for writing commit messages inside the text editor.**
+   <br>
+   
+   The widely accepted convention for Git commit messages, known as the "50/72 rule", recommends the following lengths     for commit messages written in a text editor:
+   
+    * Subject line: Limit to 50 characters or less. The subject should be a short, concise summary of the change, written     in the imperative mood (e.g., "Fix bug", not "Fixed bug").
+    * Body text: The body should be separated from the subject by a single blank line and each line in the body should be     wrapped at 72 characters. This convention improves readability in various command-line tools and interfaces.
+    * Overall length: The body can span multiple paragraphs or use bullet points to provide as much detail as necessary,as long as lines are wrapped appropriately. 
 
