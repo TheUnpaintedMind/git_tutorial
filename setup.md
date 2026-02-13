@@ -73,6 +73,7 @@ cd ~/Desktop/git_folder
 
     nothing added to commit but untracked files present (use "git add" to track)
    ```
+   
 4) To add a file with extension ext for tracking changes, we can use the following command :-
    <br>
    ```powershell
@@ -92,5 +93,25 @@ cd ~/Desktop/git_folder
    git add .
    ```
    
+5) Before making commits using git command, it is important to properly configure credentials so that git can associate our credentials with our git folder :-
+
+   <br>
+   
+   ```powershell
+   git config --global user.email "useremail@email.com"
+   git config --global user.name "username"
+   ```
+6) Now we can finally make a version/commit using the following command :-
+   <br>
+   ```powershell
+   git commit -m "added all files"
+   ```
+   <br><br>
+   Here -m **flag**(used to modify the behaviour of a command) is used to type a message for our commit. If we don't specify -m flag then a text editor automatically opens up. Click on insert key and began typing your commit, to exit the editor press escape and write the following command :-
+
+   <br><br>
+   ```poweshell
+   :wq
+   ``` 
 
 
