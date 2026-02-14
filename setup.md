@@ -138,9 +138,10 @@ git commit -m "same commit" --amend
 <br>
 Here the amend flag overwrites the topmost(current) commit and adds our message to it instead of creating another commit on top of this.
 
+<br>
+<br>
 
-<<Previous Chapter(
-
+<<[Previous Chapter(Install Git)](git_install.md) &emsp;[Next Chapter(Visualise Git)](visual.md)>>
 
 
 
