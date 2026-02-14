@@ -22,3 +22,7 @@
 5) Type "sudo apt install git", if git successfully installs then we are good to go
 6) If "unmet dependencies" is displayed type "sudo apt --fix-broken install"
 7) Finally type "sudo git install" and verify the installation by typing "git --version"
+
+<br>
+
+<<[Previous Chapter(Contents)](README.md) &emsp;[Next Chapter(Setup Git)](setup.md)>>
