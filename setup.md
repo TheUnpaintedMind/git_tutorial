@@ -130,4 +130,17 @@ cd ~/Desktop/git_folder
     * Overall length: The body can span multiple paragraphs or use bullet points to provide as much detail as necessary,as long as lines are wrapped appropriately. 
 <br>
 
+**If one doesn't want to create a new version, they can make changes to the current version by using the following flag**
+
+```powershell
+git commit -m "same commit" --amend
+```
+<br>
+Here the amend flag overwrites the topmost(current) commit and adds our message to it instead of creating another commit on top of this.
+
+
+
+
+
+
 
