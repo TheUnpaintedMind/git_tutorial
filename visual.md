@@ -1,5 +1,5 @@
 
-<<[Previous Chapter(Setup Git)](setup.md) &emsp;[Next Chapter(Visualise Git)](visual.md)>>
+<<[Previous Chapter(Setup Git)](setup.md) &emsp;[Next Chapter(Branches in Git)](b&m.md)>>
 
 # Visualising Git + Git Fundamentals 
 *There are numerous ways to visualise changes in files using Git, here are some of them given below :-*
