@@ -1,4 +1,4 @@
-<<[Previous Chapter(Miscellaneous Features)](visual.md) &emsp;[Next Chapter(GitHub)](github.md)>>
+<<[Previous Chapter(Miscellaneous Features)](extra.md) &emsp;[Next Chapter(GitHub)](github.md)>>
 
 # GitHub
 *Suppose one day we don't have our device to store and manage files, so since we have a different device right now it would be better if there was a global entity from which we can access our files irrespective of any device. So GitHub is this global backup which stores repositories/files/folders and can be accessed anywhere.*
@@ -64,7 +64,7 @@ Type "git push origin master" and after that, on Windows/Linux a login window mi
 
 <img width="686" height="333" alt="image" src="https://github.com/user-attachments/assets/97b119f6-8761-437f-a31f-1dd3ea81c4ea" />
 
-
+<<[Previous Chapter(Miscellaneous Features)](extra.md) &emsp;[Next Chapter(GitHub)](github.md)>>
 
 
 
