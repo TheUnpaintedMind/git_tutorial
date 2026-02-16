@@ -139,7 +139,7 @@ git reset filename.ext
 git checkout -- filename.ext
 ```
 
-
+<<[Previous Chapter(Setup Git)](setup.md) &emsp;[Next Chapter(Miscellaneous Features)](extra.md)>>
   
 
 
