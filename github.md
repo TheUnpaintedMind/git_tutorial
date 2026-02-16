@@ -6,3 +6,18 @@
 ### Steps to create a GitHub repository
 
 1. Create a GitHub account by going to the official [GitHub](https://github.com) website
+2. After creating new account, sign in and create a new repository
+   
+   <img width="678" height="406" alt="image" src="https://github.com/user-attachments/assets/23aaa34f-37a5-442a-994e-28e84370a9ec" />
+
+   <br>
+   Now click on new repository as shown below 
+   <br>
+
+   <img width="698" height="221" alt="image" src="https://github.com/user-attachments/assets/07451780-6935-4da5-9e67-04cc0ab1e922" />
+
+  <br>
+  
+3. Give the name, description of the repository
+   
+
