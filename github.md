@@ -22,7 +22,7 @@
 
 ### Add remote repository 
 
-Now to effectively add the GitHub repo to our folder and began uploading files to it, go to your git folder's path and use the following command. But first of all copy the https link to our GitHub repo and paste it as follows
+Now to effectively add the GitHub repo to our folder and began uploading files to it, go to your git folder's path and use the following command. Note that we can give any name to our remote repository not just "origin". But first of all copy the https link to our GitHub repo and paste it as follows
 <br><br>
 
 <img width="654" height="102" alt="image" src="https://github.com/user-attachments/assets/dc354943-6c95-41c2-95dd-c251b53d0741" />
@@ -59,13 +59,25 @@ In order to upload/download things from our remote repo, we must authenticate th
 <img width="510" height="31" alt="image" src="https://github.com/user-attachments/assets/0d7caee2-a5b7-4810-a37e-cd0f7cfc2bbc" />
 
 <br><br>
-Type "git push origin master" and after that, on Windows/Linux a login window might open and the user can login to their GitHub account, for Mac you would be prompted to enter your password of GitHub account.Refresh the page and you will see that our local repo is uploaded successfully to GitHub!
+Type "git push origin master" and after that, on Windows/Linux a login window might open and the user can login to their GitHub account, for Mac you would be prompted to enter your password of GitHub account. Refresh the page and you will see that our local repo is uploaded successfully to GitHub!
 <br><br>
 
 <img width="686" height="333" alt="image" src="https://github.com/user-attachments/assets/97b119f6-8761-437f-a31f-1dd3ea81c4ea" />
 
 <<[Previous Chapter(Miscellaneous Features)](extra.md) &emsp;[Next Chapter(GitHub)](github.md)>>
 
+### What if git push didn't work ?
+
+So if git push didn't authenticate us , there are several ways to fix this issue 
+
+1. Check that you are using HTTP and not SSH or any other method, to verify this, use the following command
+
+   <img width="526" height="43" alt="image" src="https://github.com/user-attachments/assets/94476cdd-8b71-478a-8fe8-db23c4d61692" />
+
+   <br>
+   Now remove the remote repo and again add it using the HTTP link
+
+   <img width="514" height="40" alt="image" src="https://github.com/user-attachments/assets/8df9cf1f-4731-4eae-a97d-8b74e6799124" />
 
 
 
