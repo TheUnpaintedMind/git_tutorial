@@ -41,7 +41,7 @@ The above is verified using "git remote", to get more details use the -v(verbose
 ### Remove remote repository
 To remove the remote repository just use 
 ```powershell
-git remote <reponame>
+git remote remove <reponame>
 ```
 
 <br>
