@@ -225,7 +225,7 @@ So if git push didn't authenticate us , there are several ways to fix this issue
   ```
   git add .;git commit -m <commit_msg>;git push origin master
   ```
-**Note - Here angular brackets are used as a placeholder to place data rather than typing it explicitly, for example if the name of my branch was main instead of master then for the following command main should be entered inplace of the angular brackets :-**
+**Note - Here angular brackets are used as a placeholder to place data rather than typing it explicitly, for example if the name of my branch was main instead of master then for the following command main should be entered inplace of the angular brackets**
 ```
 git push origin <branch_name>
 ```
