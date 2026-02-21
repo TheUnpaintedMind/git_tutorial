@@ -205,6 +205,33 @@ So if git push didn't authenticate us , there are several ways to fix this issue
    7. Now go to Settings/SSH and GPG keys and similarly name your SSH and paste the contents into key section, then click add SSH key and confirm passphrase/password when prompted.
 
 
+### Using SSH keys
+
+* Go to terminal/powershell and change directory to the git repo folder
+* Now type the following command to check our repo URL
+  ```
+  git remote -v
+  ```
+* Since the URL is an HTTP URL, hence we need to change it to git URL, hence we need to remove our HTTP
+  ```
+  git remote remove origin
+  ```
+* Now go to your GitHub repo and copy the SSH link and paste it as follows
+  ```
+  git remote add origin <SSH_LINK>
+  ```
+
+* Now open your git folder in a code editor and make changes, then type these following commands to finally push these changes to the GitHub repository
+  ```
+  git add .;git commit -m <commit_msg>;git push origin master
+  ```
+**Note - Here angular brackets are used as a placeholder to place data rather than typing it explicitly, for example if the name of my branch was main instead of master then for the following command main should be entered inplace of the angular brackets :-**
+```
+git push origin <branch_name>
+```
+
+
+
       
 
         
