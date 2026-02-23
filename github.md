@@ -291,6 +291,49 @@ git push -f
   ### Syncing between different local Git repos
   Suppose we make a copy of a the remote git repo, and push a commit using this repo, now if we take a look at our original local git repo, we would see that it doesn't show the new channges made with the new repo, this is because remote tracking branches don't update themselves automatically.
 
+  Comparing logs of both repositories
+  ```
+  PS>git log --all --graph --oneline --decorate
+   * d9d2328 (HEAD -> main, origin/main, origin/HEAD) removed paragraph
+   * fdcd01f Update github.md
+   * 7b8b664 Update github.md
+   * 85def2f Update github.md
+   
+   PS>git log --all --graph --decorate --oneline
+   * fdcd01f (HEAD -> main, origin/main, origin/HEAD) Update github.md
+   * 7b8b664 Update github.md
+   * 85def2f Update github.md
+  ```
+  To update our log, we  use fetch to update the remote tracking branch
+  ```
+  PS>git fetch
+   remote: Enumerating objects: 5, done.
+   remote: Counting objects: 100% (5/5), done.
+   remote: Compressing objects: 100% (1/1), done.
+   remote: Total 3 (delta 2), reused 3 (delta 2), pack-reused 0 (from 0)   
+   Unpacking objects: 100% (3/3), 286 bytes | 19.00 KiB/s, done.
+   From https://github.com/TheUnpaintedMind/Git_Tutorial
+      fdcd01f..d9d2328  main       -> origin/main
+
+  PS>git log --oneline --graph --all --decorate
+   * d9d2328 (origin/main, origin/HEAD) removed paragraph
+   * fdcd01f (HEAD -> main) Update github.md
+   * 7b8b664 Update github.md
+  ```
+  Now we use pull to actually apply the changes to our remote repo to our local folder
+  ```
+  PS>git pull origin main
+   From https://github.com/TheUnpaintedMind/Git_Tutorial
+    * branch            main       -> FETCH_HEAD
+   Updating fdcd01f..d9d2328
+   Fast-forward
+    f1.html | 1 -
+    1 file changed, 1 deletion(-)
+   PS>git log --oneline --graph --all --decorate
+   * d9d2328 (HEAD -> main, origin/main, origin/HEAD) removed paragraph
+   * fdcd01f Update github.md
+  ```
+  ### Open-Source contributions 
   
   
   
