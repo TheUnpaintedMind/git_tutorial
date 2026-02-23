@@ -287,6 +287,10 @@ git push -f
   ```
   git clone <HTTPS_URL>
   ```
+
+  ### Syncing between different local Git repos
+  Suppose we make a copy of a the remote git repo, and push a commit using this repo, now if we take a look at our original local git repo, we would see that it doesn't show the new channges made with the new repo, this is because remote tracking branches don't update themselves automatically.
+
   
   
   
