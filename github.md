@@ -333,7 +333,24 @@ git push -f
    * d9d2328 (HEAD -> main, origin/main, origin/HEAD) removed paragraph
    * fdcd01f Update github.md
   ```
-  ### Open-Source contributions 
+  ### Open-Source contributions
+  Suppose we are tasked with making some open source contributions meaning working on other's    repositories, now there are 2 ways to do that
+  
+  * **Either make the copy of that repo on GitHub -** go to the repository and click on the fork icon
+    
+    <img width="907" height="140" alt="image" src="https://github.com/user-attachments/assets/6a8766e1-2a72-4fa5-9c40-d9b3db55ae2f" />
+
+  <br>
+  <br>
+     Now set the repo name, description and confirm if only master branch needs to be added/forked
+
+  * Or make a local copy by using git clone
+     ```
+     git clone <REPO_URL>
+     ```
+     
+  * Another way can be to combine both these options ie, fork repo remotely and make its local copy using git clone
+
   
   
   
