@@ -244,7 +244,12 @@ git push origin <branch_name>
    | * a6c633a added repo
      * 9ac3041 Update github.md
   ```
-* Instead of repeatedly typing git push origin master , we 
+* Instead of repeatedly typing git push origin master, we set an upstream as follows
+  ```
+  git push origin master --set-upstream
+  ```
+  So now git automatically recognises "git push" as "git push origin master", hence we just use "git push"
+  
   
 
 
