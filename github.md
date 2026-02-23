@@ -249,6 +249,24 @@ git push origin <branch_name>
   git push origin master --set-upstream
   ```
   So now git automatically recognises "git push" as "git push origin master", hence we just use "git push"
+
+**Note -** Git push only adds commits to our remote repo, if we didn't create a commit and just used git push then git wouldn't know if we made changes and everything would appear up-to-date
+```
+git add .
+git push origin main
+```
+**OUTPUT**
+```
+PS> git add .;git push origin main
+Everything up-to-date
+```
+Suppose we wanted to use amend to overwrite our commit, doing that locally is completely file but for a remote  repository, branches can occur
+```
+git commit --amend -m <commit_msg>
+git log --all --graph --oneline --decorate
+```
+
+  
   
   
 
