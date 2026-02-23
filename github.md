@@ -277,7 +277,16 @@ Now git doesn't allow push in these cases due to loss of work due to previous co
 ```
 git push -f
 ```
-
+**Note -** While using Git/GitHub, one can encounter 2 things 
+* **Local repo but no remote repo :** In this case, one can have work in their local git folder but don't have it linked to a remote repository, so for this case they must create a remote repo and add it to their local repo using the following commands.
+  ```
+  git remote add origin <HTTPS_URL>
+  cd <REPO_NAME>
+  ```
+* **Remote repo but want to  add it to local folder -** In this case, one already has work in their remote repo but want to add it to their local folder, hence cloning the remote repo is suitable
+  ```
+  git clone <HTTPS_URL>
+  ```
   
   
   
