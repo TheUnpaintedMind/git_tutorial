@@ -265,6 +265,18 @@ Suppose we wanted to use amend to overwrite our commit, doing that locally is co
 git commit --amend -m <commit_msg>
 git log --all --graph --oneline --decorate
 ```
+So now our graph looks like this
+```
+PS> git log --all --graph --oneline --decorate
+* c320f48 (HEAD -> main) added another paragraph
+| * 56391f1 (origin/main, origin/HEAD) Update github.md
+|/
+* 21de49d Update github.md
+```
+Now git doesn't allow push in these cases due to loss of work due to previous commit, hence we can force git push
+```
+git push -f
+```
 
   
   
