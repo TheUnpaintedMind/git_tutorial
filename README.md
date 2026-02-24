@@ -25,4 +25,4 @@ and flexibility.
 3. [Visualise Git](visual.md)
 4. [Miscellaneous Git Features](extra.md)
 5. [Getting started with GitHub](github.md)
-
+6. [Branching and Merging](branching.md)
