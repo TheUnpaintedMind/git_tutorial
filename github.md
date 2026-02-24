@@ -1,4 +1,4 @@
-<<[Previous Chapter(Miscellaneous Features)](extra.md) &emsp;[Next Chapter(GitHub)](github.md)>>
+<<[Previous Chapter(Miscellaneous Features)](extra.md) &emsp;[Next Chapter(Branching and Merging)](branching.md)>>
 
 # GitHub
 *Suppose one day we don't have our device to store and manage files, so since we have a different device right now it would be better if there was a global entity from which we can access our files irrespective of any device. So GitHub is this global backup which stores repositories/files/folders and can be accessed anywhere.*
@@ -351,6 +351,7 @@ git push -f
      
   * Another way can be to combine both these options ie, fork repo remotely and make its local copy using git clone
 
+<<[Previous Chapter(Miscellaneous Features)](extra.md) &emsp;[Next Chapter(Branching and Merging)](branching.md)>>
   
   
   
