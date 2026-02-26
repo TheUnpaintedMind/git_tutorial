@@ -48,35 +48,11 @@ Since features 1 and 2 weren't a part of main branch's history hence they were b
 Now suppose we need to combine all our changes in different branches into a single change, such as actually implementing those features into our main branch which also contains bug fixes, hence we require merging of those branches into one single branch, we have two options and git doesn't require any specific order of merging.
 We can either merge main branch into feature branch or merge feature branch into main branch, either ways we are going to merge the changes caused by both branches.
 
-Suppose i have an html file, i have a "main/master" branch and i want to create another branch for adding features say "feature" branch, to create a new branch use the following command
+Suppose i have an html file, i have a "main/master" branch and i want to create another branch for adding features say "feature" branch, to create a new branch type
+``` bash
+git branch <branch_name>
+```
 
-``` bash
-git branch feature
-```
-``` html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <p>This paragraph represents file - 1</p>
-    <p>BUGFIX</p>
-    <p>Feature-1</p>
-</body>
-</html>
-```
-Checking our logs 
-``` bash
-terminal>git log --all --graph --oneline --decorate
-* 748afc2 (HEAD -> feature) added feature
-* 62aee23 (origin/main, origin/HEAD, main) Update branching.md
-* 755f79a Update branching.md
-* 75dff46 Update branching.md
-```
-Now we can again go to the main branch and
 
 
 
