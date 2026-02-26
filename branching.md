@@ -45,7 +45,9 @@ PS>git log --all --graph --decorate --oneline
 Since features 1 and 2 weren't a part of main branch's history hence they were branched out.
 
 ### Merging 
-Now suppose we need to combine all our changes in different branches into a single change, such as actually implementing those features into our main branch which also contains bug fixes
+Now suppose we need to combine all our changes in different branches into a single change, such as actually implementing those features into our main branch which also contains bug fixes, hence we require merging of those branches into one single branch, we have two options and git doesn't require any specific order of merging.
+We can either merge main branch into feature branch or merge feature branch into main branch, either ways we are going to merge the changes caused by both branches.
+
 
 
 
