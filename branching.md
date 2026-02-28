@@ -52,7 +52,61 @@ Suppose i have an html file, i have a "main/master" branch and i want to create 
 ``` bash
 git branch <branch_name>
 ```
+Now my main branch contains the following code which has a bugfix
+``` html
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>This paragraph represents file - 1</p>
+    <p>BUGFIX</p>
+</body>
+</html>  
+
+```
+And feature branch contains added features
+``` html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>This paragraph represents file - 1</p>
+    <p>BUGFIX</p>
+    <p>Feature-1</p>
+</body>
+</html>
+```
+Now we want to add both these branches and merge them into a single branch, suppose we want to merge feature with main, we do the following
+``` bash
+git checkout main
+git merge feature
+```
+Our merge file looks as follows 
+``` html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>This paragraph represents file - 1</p>
+    <p>BUGFIX</p>
+    <p>Feature-1</p>
+</body>
+</html>
+```
+Since we added feature-1 to line 11 and no changes were done to line 11 in main branch, we could merge without any conflicts, but what if we added feature-2 and in feature branch added feature-3
 
 
 
