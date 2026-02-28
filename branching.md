@@ -106,7 +106,81 @@ Our merge file looks as follows
 </body>
 </html>
 ```
-Since we added feature-1 to line 11 and no changes were done to line 11 in main branch, we could merge without any conflicts, but what if we added feature-2 and in feature branch added feature-3
+Since we added feature-1 to line 11 and no changes were done to line 11 in main branch, we could merge without any conflicts, but what if we added feature-2 and in feature branch added feature-3 in the same line of a file.
+
+So in main and feature branch respectively code is shown as follows
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Feature-2</p>
+</body>
+</html>
+```
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Feature-3</p>
+</body>
+</html>
+```
+
+Now since git doesn't understand if it should keep main or feature branch's changes, hence we have a merge conflict, there are 3 ways to resolve a merge conflict
+1. **Manual way -** After merging we end up with a merge conflict and git opens our file with changes from both the branches showing as follows
+   
+   <img width="1006" height="441" alt="image" src="https://github.com/user-attachments/assets/768f5e57-d4e7-45af-9de9-49afc304bfcd" />
+   <br>
+   <br>
+   1.1) If we want to keep main branch's changes, just erase the code written for feature branch along with the arrow('>','<') and equality('===') markers<br>
+   1.2) If we want to keep feature branch's changes, just erase the code written for main branch and erase markers and arrows<br>
+   1.3) If we wish to keep both branch changes then just erase the markers manually<br>
+2. **Using Merge Editor -** We can also open the merge editor, the merge editor looks as follows
+
+   <img width="1035" height="471" alt="image" src="https://github.com/user-attachments/assets/81966847-9acf-4f5c-a9c1-1075531a2728" />
+   <br>
+   <br>
+   2.1) If we want to keep main branch's changes, just click on the tick mark along main branch's changes and click complete merge<br>
+   2.2) If we want to keep feature branch's changes, just click on the tick mark along feature branch's changes and click complete merge<br>
+   2.3) If we wish to keep both branch changes then just click on both tick marks in the order you want your main and feature code to appear and then click complete merge<br>
+3. **Using git commands(only 1 order for both changes) -** We can also use the git commands as follows<br>
+   3.1) If we want to keep main branch's changes then type the following command, it will discard changes of the feature branch<br>
+   ```bash
+   git merge -X ours feature
+   ```
+   3.2) If we want to keep feature branch's changes then type the following command, it will discard changes of main branch<br>
+   ```bash
+   git merge -X theirs feature
+   ```
+   3.3) If we want to keep both changes, then we can use 'union' which only keeps the changes of current branch (main) first and then the incoming branch (feature)<br>
+   ```bash
+   git merge -X union feature
+   ```
+   
+
+   
+   
+
+
+
+
+
+
+
+
+
 
 
 
